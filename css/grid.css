@@ -1,0 +1,141 @@
+html {
+	font-family: helvetica;
+	font-weight: bold;
+}
+
+.box {
+	background-color: #ccc;
+	border-radius: 5px;
+	height: 100px;
+	margin: 10px;
+}
+
+.wide_box {
+	width: 380px;
+}
+
+.small_box {
+ width: 180px;
+}
+
+.flow {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 400px);
+	justify-content: center;
+}
+
+.element {
+	display: grid;
+}
+
+.full {
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		"full";
+} 
+
+.even {
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-areas:
+		"half_1 half_2";
+}
+
+.uneven {
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-areas:
+		"one_third two_thirds two_thirds";
+}
+
+.steady_and_fluid {
+	grid-template-columns: 200px 1fr;
+	grid-template-areas:
+		"steady fluid";
+}
+
+.full {grid-area: full;}
+.half_1 {grid-area: half_1;}
+.half_2 {grid-area: half_2;}
+.one_third {grid-area: one_third;}
+.two_thirds {grid-area: two_thirds;}
+.steady {grid-area: steady;}
+.fluid {grid-area: fluid;}
+
+.box {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+}
+
+.reordering {
+	display: grid;
+	grid-template-columns: repeat(2, 200px);
+	grid-template-rows: repeat(4, 120px);
+	grid-template-areas:
+		"box_1 box_1"
+		"box_2 box_2"
+		"box_3 box_4"
+		"box_5 box_5"
+		"box_6 box_6"
+		"box_7 box_8";
+	margin: 0 auto;
+	max-width: 400px; 
+}
+
+@media only screen and (min-width: 600px) {	
+	.reordering {
+		max-width: 600px; 
+		grid-template-columns: 400px 200px;
+		grid-template-areas:
+			"box_1 box_3"
+			"box_2 box_4"
+			"box_5 box_7"
+			"box_6 box_8";
+	}
+}
+
+@media only screen and (min-width: 800px) {	
+	.reordering {
+		max-width: 800px; 
+		grid-template-columns: repeat(4, 200px);
+	  grid-template-areas:
+			"box_1 box_1 box_2 box_2"
+			"box_3 box_4 box_5 box_5"
+			"box_6 box_6 box_7 box_8";
+	}
+}
+
+#box_1 {grid-area: box_1;}
+#box_2 {grid-area: box_2;}
+#box_3 {grid-area: box_3;}
+#box_4 {grid-area: box_4;}
+#box_5 {grid-area: box_5;}
+#box_6 {grid-area: box_6;}
+#box_7 {grid-area: box_7;}
+#box_8 {grid-area: box_8;}
+
+.spacing_element {
+	display: grid;
+	grid-template-columns: repeat(3, 120px);
+	grid-template-areas:
+		"box_1 box_2 box_3";
+}
+
+.around {
+	justify-content: space-around;
+}
+
+.between {
+	justify-content: space-between;
+}
+
+.center {
+	justify-content: center;
+}
+
+.start {
+	justify-content: start;
+}
+
+.end {
+	justify-content: end;
+}
