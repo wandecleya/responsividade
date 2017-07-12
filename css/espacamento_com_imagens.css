@@ -1,0 +1,49 @@
+html {
+	font-family: helvetica;
+	font-weight: bold;
+}
+
+.box {
+	background-image: url(../img/arranjo.png);
+	background-size: cover;
+	border-radius: 5px;
+	height: 100px;
+	margin: 10px;
+}
+
+.wide_box {
+	width: 380px;
+}
+
+.small_box {
+ width: 180px;
+}
+
+
+.spacing_element {
+	display: flex;
+}
+
+.steady_box {
+	width: 100px;
+}
+
+.around {
+	justify-content: space-around;
+}
+
+.between {
+	justify-content: space-between;
+}
+
+.center {
+	justify-content: center;
+}
+
+.start {
+	justify-content: flex-start;
+}
+
+.end {
+	justify-content: flex-end;
+}
