@@ -1,0 +1,113 @@
+html {
+	font-family: helvetica;
+	font-weight: bold;
+}
+
+.box {
+	background-image: url(../img/fundo.jpg);
+	background-size: cover;
+	border-radius: 5px;
+	height: 100px;
+	margin: 10px;
+}
+
+.wide_box {
+	width: 380px;
+}
+
+.small_box {
+ width: 180px;
+}
+
+.steady_rectangle {
+	width: 380px;
+}
+
+.flow {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.element {
+	display: flex;
+}
+
+.proportional_to_1 {
+	flex-grow: 1;
+}
+
+.proportional_to_2 {
+	flex-grow: 2;
+}
+
+.steady {
+	width: 200px;
+}
+
+.reordering {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 400px;
+}
+
+.box {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 600px) {	
+	.reordering {
+		width: 600px; 
+	}
+
+	#box_1 { order: -10;}
+	#box_3 { order: -9;}
+	#box_2 { order: -8;}
+	
+
+	#box_4 { order: -7;}
+	#box_5 { order: -6;}
+	#box_7 { order: -5;}
+	#box_6 { order: -4;}
+}
+
+@media only screen and (min-width: 800px) {
+	.reordering {
+		width: 800px; 
+	}
+
+	#box_1, #box_2, #box_3, #box_4, #box_5, #box_6, #box_7 {
+		order: 0;
+	}
+}
+
+.spacing_element {
+	display: flex;
+}
+
+.steady_box {
+	width: 100px;
+}
+
+.around {
+	justify-content: space-around;
+}
+
+.between {
+	justify-content: space-between;
+}
+
+.center {
+	justify-content: center;
+}
+
+.start {
+	justify-content: flex-start;
+}
+
+.end {
+	justify-content: flex-end;
+}
