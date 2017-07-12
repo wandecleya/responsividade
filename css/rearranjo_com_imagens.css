@@ -1,0 +1,31 @@
+html {
+	font-family: helvetica;
+	font-weight: bold;
+}
+
+.box {
+	background-image: url(../img/fundo.jpg);
+	background-size: cover;
+	border-radius: 5px;
+	height: 100px;
+	margin: 10px;
+}
+
+.wide_box {
+	width: 380px;
+}
+
+.small_box {
+ width: 180px;
+}
+
+
+.steady_rectangle {
+	width: 380px;
+}
+
+.flow {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
