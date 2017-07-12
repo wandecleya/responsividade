@@ -1,0 +1,163 @@
+html {
+	font-family: helvetica;
+	font-weight: bold;
+}
+
+.box {
+	background-color: #ccc;
+	border-radius: 5px;
+	height: 100px;
+	margin: 10px;
+}
+
+.wide_box {
+	width: 380px;
+}
+
+.small_box {
+ width: 180px;
+}
+
+
+.reordering {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 400px;
+}
+
+.box {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 100px) {	
+	.reordering {
+		width: 600px; 
+	}
+
+	#box_1 { order: -10;}
+	#box_3 { order: -9;}
+	#box_2 { order: -8;}
+	
+
+	#box_4 { order: -7;}
+	#box_5 { order: -6;}
+	#box_7 { order: -5;}
+	#box_6 { order: -4;}
+}
+
+@media only screen and (min-width: 200px) {
+	.reordering {
+		width: 800px; 
+	}
+
+	#box_1, #box_2, #box_3, #box_4, #box_5, #box_6, #box_7 {
+		order: 0;
+	}
+}
+
+@media only screen and (min-width: 300px) {	
+	.reordering {
+		width: 600px; 
+	}
+
+	#box_1 { order: -10;}
+	#box_3 { order: -9;}
+	#box_2 { order: -8;}
+	
+
+	#box_4 { order: -7;}
+	#box_5 { order: -6;}
+	#box_7 { order: -5;}
+	#box_6 { order: -4;}
+}
+
+@media only screen and (min-width: 400px) {
+	.reordering {
+		width: 800px; 
+	}
+
+	#box_1, #box_2, #box_3, #box_4, #box_5, #box_6, #box_7 {
+		order: 0;
+	}
+}
+
+@media only screen and (min-width: 500px) {	
+	.reordering {
+		width: 600px; 
+	}
+
+	#box_1 { order: -10;}
+	#box_3 { order: -9;}
+	#box_2 { order: -8;}
+	
+
+	#box_4 { order: -7;}
+	#box_5 { order: -6;}
+	#box_7 { order: -5;}
+	#box_6 { order: -4;}
+}
+
+@media only screen and (min-width: 600px) {
+	.reordering {
+		width: 800px; 
+	}
+
+	#box_1, #box_2, #box_3, #box_4, #box_5, #box_6, #box_7 {
+		order: 0;
+	}
+}
+
+@media only screen and (min-width: 700px) {	
+	.reordering {
+		width: 600px; 
+	}
+
+	#box_1 { order: -10;}
+	#box_3 { order: -9;}
+	#box_2 { order: -8;}
+	
+
+	#box_4 { order: -7;}
+	#box_5 { order: -6;}
+	#box_7 { order: -5;}
+	#box_6 { order: -4;}
+}
+
+@media only screen and (min-width: 800px) {
+	.reordering {
+		width: 800px; 
+	}
+
+	#box_1, #box_2, #box_3, #box_4, #box_5, #box_6, #box_7 {
+		order: 0;
+	}
+}
+
+@media only screen and (min-width: 900px) {	
+	.reordering {
+		width: 600px; 
+	}
+
+	#box_1 { order: -10;}
+	#box_3 { order: -9;}
+	#box_2 { order: -8;}
+	
+
+	#box_4 { order: -7;}
+	#box_5 { order: -6;}
+	#box_7 { order: -5;}
+	#box_6 { order: -4;}
+}
+
+@media only screen and (min-width: 100px) {
+	.reordering {
+		width: 800px; 
+	}
+
+	#box_1, #box_2, #box_3, #box_4, #box_5, #box_6, #box_7 {
+		order: 0;
+	}
+}
