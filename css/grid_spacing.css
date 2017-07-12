@@ -1,0 +1,26 @@
+.spacing_element {
+	display: grid;
+	grid-template-columns: repeat(3, 120px);
+	grid-template-areas:
+		"box_1 box_2 box_3";
+}
+
+.around {
+	justify-content: space-around;
+}
+
+.between {
+	justify-content: space-between;
+}
+
+.center {
+	justify-content: center;
+}
+
+.start {
+	justify-content: start;
+}
+
+.end {
+	justify-content: end;
+}

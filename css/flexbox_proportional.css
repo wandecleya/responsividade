@@ -1,0 +1,16 @@
+.element {
+	display: flex;
+}
+
+.proportional_to_1 {
+	flex-grow: 1;
+}
+
+.proportional_to_2 {
+	flex-grow: 2;
+}
+
+.steady {
+	width: 200px;
+}
+

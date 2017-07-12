@@ -1,0 +1,27 @@
+.spacing_element {
+	display: flex;
+}
+
+.steady_box {
+	width: 100px;
+}
+
+.around {
+	justify-content: space-around;
+}
+
+.between {
+	justify-content: space-between;
+}
+
+.center {
+	justify-content: center;
+}
+
+.start {
+	justify-content: flex-start;
+}
+
+.end {
+	justify-content: flex-end;
+}

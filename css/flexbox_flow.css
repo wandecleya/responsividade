@@ -1,0 +1,9 @@
+.steady_rectangle {
+	width: 380px;
+}
+
+.flow {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
