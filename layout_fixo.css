@@ -1,0 +1,29 @@
+header, main, aside {
+	background-color: #ccc;
+	border-radius: 5px;
+}
+
+.container {
+	width: 960px;
+	margin: 0 auto;
+}
+
+header {
+	width: 940px;
+	height: 200px;
+	margin: 10px;
+}
+
+main {
+	width: 700px;
+	height: 500px;
+	margin: 10px;
+	float: left;
+}
+
+aside {
+	width: 220px;
+	height: 500px;
+	margin: 10px;
+	float: right;
+}
